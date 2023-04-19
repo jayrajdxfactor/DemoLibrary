@@ -10,6 +10,7 @@ import com.bumptech.glide.request.target.Target
 import androidx.databinding.BindingAdapter
 import com.dxdemo.dxdemolibrary.R
 
+
 @BindingAdapter("imageUrl")
 fun loadOriginalQaulityImage(imageView: ImageView, imageUrl: String?) {
 

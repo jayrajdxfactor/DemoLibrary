@@ -10,7 +10,7 @@ plugins {
 
 
 android {
-    namespace 'com.dxfactorDemoOrg.dxdemolibrary'
+    namespace 'com.dxdemo.dxdemolibrary'
     compileSdk 33
 
     defaultConfig {
@@ -58,8 +58,8 @@ afterEvaluate {
             release(MavenPublication) {
                 from components.release
 
-                groupId = 'com.github.jayrajdxfactor'
-                artifactId = 'DemoLibrary'
+                groupId = 'com.dxdemo'
+                artifactId = 'dxdemolibrary'
                 version = '4.0'
             }
         }
