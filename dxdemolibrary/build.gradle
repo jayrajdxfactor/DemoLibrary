@@ -5,8 +5,8 @@ plugins {
     id 'kotlin-kapt'
 }
 
-group = 'com.dxfactorDemoOrg'
-version = '1.0'
+//group = 'com.dxfactorDemoOrg'
+//version = '1.0'
 
 
 android {
