@@ -41,30 +41,30 @@ android {
 }
 
 
-publishing {
-    publications {
-        maven(MavenPublication) {
-            groupId = 'com.github.dxfactorDemoOrg'
-            artifactId = 'dxdemolibrary'
-            version = '2.0'
-
-           // from components.java
-        }
-    }
-}
-//afterEvaluate {
-//    publishing {
-//        publications {
-//            release(MavenPublication) {
-//                from components.release
+//publishing {
+//    publications {
+//        maven(MavenPublication) {
+//            groupId = 'com.github.dxfactorDemoOrg'
+//            artifactId = 'dxdemolibrary'
+//            version = '2.0'
 //
-//                groupId = 'com.github.dxfactorDemoOrg'
-//                artifactId = 'dxdemolibrary'
-//                version = '1.0'
-//            }
+//           // from components.java
 //        }
 //    }
 //}
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+
+                groupId = 'com.github.jayrajdxfactor'
+                artifactId = 'DemoLibrary'
+                version = '4.0'
+            }
+        }
+    }
+}
 
 
 dependencies {
